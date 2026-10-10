@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Buddy</title>
+</head>
+
+    <script src="script.js" defer></script>
+
+<body>
+
+    <header>
+        <h1>AI Study Buddy</h1>
+        <p>Your personal learning companion</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Learn a Topic</h2>
+
+            <label for="topic">Enter your study topic:</label>
+            <input
+                type="text"
+                id="topic"
+                placeholder="e.g. Machine Learning"
+            >
+
+            <button id="explainBtn">Explain Topic</button>
+        </section>
+
+        <section>
+            <h2>Topic Explanation</h2>
+            <p id="explanation">
+                Your explanation will appear here.
+            </p>
+        </section>
+        
+
+    <h2>Practice Quiz</h2>
+
+    <p id="quizQuestion">
+        What does AI stand for?
+    </p>
+
+    <div id="quizOptions">
+        <button class="quizOption" data-answer="wrong">
+            Automated Information
+        </button>
+
+        <button class="quizOption" data-answer="correct">
+            Artificial Intelligence
+        </button>
+
+        <button class="quizOption" data-answer="wrong">
+            Advanced Internet
+        </button>
+    </div>
+
+    <p id="quizFeedback">
+        Select an answer to begin.
+    </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Keep learning, one topic at a time!</p>
+    </footer>
+
+</body>
+</html>

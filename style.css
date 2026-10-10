@@ -1,0 +1,111 @@
+
+/* 1. Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f5fb;
+    color: #24243a;
+    line-height: 1.6;
+}
+
+/* 2. Header */
+header {
+    background: linear-gradient(135deg, #5146d8, #8b5cf6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* 3. Main content */
+main {
+    width: 90%;
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+/* 4. Cards */
+section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #5146d8;
+}
+
+/* 5. Topic input */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d7d8e5;
+    border-radius: 9px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: 2px solid #8b5cf6;
+    border-color: transparent;
+}
+
+/* 6. Button */
+button {
+    background: #5146d8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #3e35b0;
+}
+
+/* 7. Footer */
+footer {
+    text-align: center;
+    color: #68687b;
+    padding: 15px 20px 25px;
+}
+
+/* 8. Mobile-friendly layout */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
