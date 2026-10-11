@@ -1,4 +1,4 @@
-const topicInput = document.getElementById("topic"); 
+let currentQuestion = 0;const topicInput = document.getElementById("topic"); 
 const explainBtn = document.getElementById("explainBtn"); 
 const explanation = document.getElementById("explanation"); 
 
@@ -29,7 +29,7 @@ const quizOptions = document.querySelectorAll(".quizOption");
 const quizFeedback = document.getElementById("quizFeedback"); 
 const quizScore = document.getElementById("quizScore"); 
 let score = 0; // Keeping track of global score correctly
-
+let currentQuestion = 0;
 
 const quizQuestions = [
   {
