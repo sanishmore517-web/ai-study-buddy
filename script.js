@@ -30,4 +30,7 @@ explainBtn.addEventListener("click", function () {
         explanation.textContent =
             "Sorry, this topic is not supported yet. Try Artificial Intelligence, Machine Learning, or Deep Learning.";
     }
+    const quizOptions = document.querySelectorAll(".quizOption");
+    const quizFeedback = document.getElementById("quizFeedback");
+     let score = 0;
 });
