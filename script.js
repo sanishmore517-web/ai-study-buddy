@@ -40,4 +40,4 @@ quizOptions.forEach(function (option) {
       quizFeedback.textContent = "Not quite! Try another answer."; 
     } 
   }); 
-
+});
