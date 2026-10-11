@@ -29,7 +29,7 @@ const quizOptions = document.querySelectorAll(".quizOption");
 const quizFeedback = document.getElementById("quizFeedback"); 
 const quizScore = document.getElementById("quizScore"); 
 let score = 0; // Keeping track of global score correctly
-
+let questionAnswered = false;
 quizOptions.forEach(function (option) { 
   option.addEventListener("click", function () { 
     if (option.dataset.answer === "correct") { 
