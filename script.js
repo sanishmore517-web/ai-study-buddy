@@ -29,6 +29,37 @@ const quizOptions = document.querySelectorAll(".quizOption");
 const quizFeedback = document.getElementById("quizFeedback"); 
 const quizScore = document.getElementById("quizScore"); 
 let score = 0; // Keeping track of global score correctly
+
+
+const quizQuestions = [
+  {
+    question: "What does AI stand for?",
+    options: [
+      "Automated Information",
+      "Artificial Intelligence",
+      "Advanced Internet"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "What does ML stand for?",
+    options: [
+      "Machine Learning",
+      "Manual Logic",
+      "Modern Language"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "What does Deep Learning use?",
+    options: [
+      "Only spreadsheets",
+      "Neural networks with multiple layers",
+      "Only calculators"
+    ],
+    correctAnswer: 1
+  }
+];
 let questionAnswered = false;
 quizOptions.forEach(function (option) {
   option.addEventListener("click", function () {
