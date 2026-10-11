@@ -33,15 +33,5 @@ explainBtn.addEventListener("click", function () {
     const quizOptions = document.querySelectorAll(".quizOption");
     const quizFeedback = document.getElementById("quizFeedback");
      let score = 0;
-    quizOptions.forEach(function (option) {
-    option.addEventListener("click", function () {
-        if (option.dataset.answer === "correct") {
-            score++;
-            quizScore.textContent = "Score: " + score;
-            quizFeedback.textContent = "Correct! Great job!";
-        } else {
-            quizFeedback.textContent = "Not quite! Try another answer.";
-        }
-    });
     const quizScore = document.getElementById("quizScore");
 });
