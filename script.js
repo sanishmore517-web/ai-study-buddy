@@ -30,14 +30,25 @@ const quizFeedback = document.getElementById("quizFeedback");
 const quizScore = document.getElementById("quizScore"); 
 let score = 0; // Keeping track of global score correctly
 let questionAnswered = false;
-quizOptions.forEach(function (option) { 
-  option.addEventListener("click", function () { 
-    if (option.dataset.answer === "correct") { 
-      score++; 
-      quizScore.textContent = "Score: " + score; 
-      quizFeedback.textContent = "Correct! Great job!"; 
-    } else { 
-      quizFeedback.textContent = "Not quite! Try another answer."; 
-    } 
+quizOptions.forEach(function (option) {
+  option.addEventListener("click", function () {
+
+    if (questionAnswered) {
+      return;
+    }
+
+    questionAnswered = true;
+
+    if (option.dataset.answer === "correct") {
+      score++;
+      quizScore.textContent = "Score: " + score;
+      quizFeedback.textContent = "Correct! Great job!";
+    } else {
+      quizFeedback.textContent = "Not quite! Try again next time.";
+    }
+
+    quizOptions.forEach(function (button) {
+      button.disabled = true;
+    });
   }); 
 });
