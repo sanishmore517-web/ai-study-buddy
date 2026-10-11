@@ -43,6 +43,6 @@ quizOptions.forEach(function (option) {
             quizFeedback.textContent = "Correct! Great job!";
         } else {
             quizFeedback.textContent = "Not quite! Try another answer.";
-        }
+              }
     });
-});  
+});
