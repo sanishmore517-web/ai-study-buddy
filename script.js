@@ -39,11 +39,18 @@ explainBtn.addEventListener("click", function () {
     return; 
   } 
   
-  if (topics[userTopic]) { 
-    explanation.textContent = topics[userTopic]; 
-  } else { 
-    explanation.textContent = "Sorry, this topic is not supported yet. Try Artificial Intelligence, Machine Learning, or Deep Learning."; 
-  } 
+
+const matchedTopic = Object.keys(topics).find(function (topic) {
+  return userTopic === topic || userTopic.includes(topic);
+});
+
+if (matchedTopic) {
+  explanation.textContent = topics[matchedTopic];
+} else {
+  explanation.textContent =
+    "Sorry, this topic is not supported yet. Try Python, C Programming, HTML, or Artificial Intelligence.";
+}
+
 }); // Added closing brackets to separate the functionalities
 
 // 2. Quiz Logic (Moved outside and isolated)
