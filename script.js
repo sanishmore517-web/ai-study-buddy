@@ -71,6 +71,7 @@ quizOptions.forEach(function (option) {
 
     questionAnswered = true;
     nextQuestionBtn.disabled = false;
+    option.style.backgroundColor = "";
 
     
 if (option.dataset.answer === "correct") {
