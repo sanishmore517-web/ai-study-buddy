@@ -2,11 +2,33 @@ let currentQuestion = 0;const topicInput = document.getElementById("topic");
 const explainBtn = document.getElementById("explainBtn"); 
 const explanation = document.getElementById("explanation"); 
 
-const topics = { 
-  "artificial intelligence": "Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that usually require human intelligence, such as understanding language and solving problems.", 
-  "machine learning": "Machine Learning (ML) is a branch of AI that allows computers to learn patterns from data and make predictions without being explicitly programmed for every situation.", 
-  "deep learning": "Deep Learning is a type of machine learning that uses neural networks with multiple layers to learn complex patterns from data." 
-}; 
+
+const topics = {
+  "artificial intelligence": "Artificial Intelligence (AI) enables machines to perform tasks that usually require human intelligence, such as understanding language and solving problems.",
+
+  "machine learning": "Machine Learning (ML) allows computers to learn patterns from data and make predictions without being explicitly programmed for every situation.",
+
+  "deep learning": "Deep Learning is a type of machine learning that uses neural networks with multiple layers to learn complex patterns.",
+
+  "data science": "Data Science combines statistics, programming, and domain knowledge to extract useful insights from data.",
+
+  "python": "Python is a beginner-friendly programming language used in web development, automation, data science, and artificial intelligence.",
+
+  "c programming": "C is a procedural programming language used to learn programming fundamentals and develop efficient software.",
+
+  "html": "HTML (HyperText Markup Language) structures the content of web pages using elements such as headings, paragraphs, links, and images.",
+
+  "css": "CSS (Cascading Style Sheets) controls the appearance of web pages, including colors, fonts, spacing, and layouts.",
+
+  "javascript": "JavaScript is a programming language that makes web pages interactive, for example by responding to clicks and updating content.",
+
+  "algorithms": "An algorithm is a step-by-step procedure for solving a problem or completing a task.",
+
+  "database": "A database is an organized collection of data that can be stored, searched, updated, and managed.",
+
+  "computer networks": "Computer networks connect devices so they can exchange data and share resources."
+};
+ 
 
 // 1. Topic Explanation Logic
 explainBtn.addEventListener("click", function () { 
