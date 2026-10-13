@@ -70,6 +70,7 @@ quizOptions.forEach(function (option) {
     }
 
     questionAnswered = true;
+    nextQuestionBtn.disabled = false;
 
     if (option.dataset.answer === "correct") {
       score++;
