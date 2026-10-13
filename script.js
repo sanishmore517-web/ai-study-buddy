@@ -28,6 +28,7 @@ explainBtn.addEventListener("click", function () {
 const quizOptions = document.querySelectorAll(".quizOption"); 
 const quizFeedback = document.getElementById("quizFeedback"); 
 const quizScore = document.getElementById("quizScore"); 
+const nextQuestionBtn = document.getElementById("nextQuestionBtn");
 let score = 0; // Keeping track of global score correctly
 
 
