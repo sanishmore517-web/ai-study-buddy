@@ -105,3 +105,21 @@ function showQuestion() {
 
   nextQuestionBtn.disabled = true;
 }
+// 3. Next Button & Initialization Logic
+nextQuestionBtn.addEventListener("click", function () {
+    currentQuestion++; // Move to the next question index
+    
+    // Check if there are more questions left
+    if (currentQuestion < quizQuestions.length) {
+        showQuestion();
+    } else {
+        // Quiz is over
+        document.getElementById("quizQuestion").textContent = "Quiz Completed!";
+        quizFeedback.textContent = `Final Score: ${score} out of ${quizQuestions.length}`;
+        nextQuestionBtn.disabled = true;
+        quizOptions.forEach(button => button.style.display = 'none'); // Hide options
+    }
+});
+
+// Initialize the very first question when the page loads
+showQuestion();
