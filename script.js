@@ -72,13 +72,17 @@ quizOptions.forEach(function (option) {
     questionAnswered = true;
     nextQuestionBtn.disabled = false;
 
-    if (option.dataset.answer === "correct") {
-      score++;
-      quizScore.textContent = "Score: " + score;
-      quizFeedback.textContent = "Correct! Great job!";
-    } else {
-      quizFeedback.textContent = "Not quite! Try again next time.";
-    }
+    
+if (option.dataset.answer === "correct") {
+  score++;
+  quizScore.textContent = "Score: " + score;
+  quizFeedback.textContent = "Correct! Great job!";
+  option.style.backgroundColor = "lightgreen";
+} else {
+  quizFeedback.textContent = "Not quite! Try again next time.";
+  option.style.backgroundColor = "lightcoral";
+}
+
 
     quizOptions.forEach(function (button) {
       button.disabled = true;
