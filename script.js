@@ -84,3 +84,23 @@ quizOptions.forEach(function (option) {
     });
   }); 
 });
+function showQuestion() {
+  const question = quizQuestions[currentQuestion];
+
+  document.getElementById("quizQuestion").textContent =
+    question.question;
+
+  quizOptions.forEach(function (option, index) {
+    option.textContent = question.options[index];
+
+    option.dataset.answer =
+      index === question.correctAnswer ? "correct" : "wrong";
+
+    option.disabled = false;
+  });
+
+  quizFeedback.textContent = "Select an answer to begin.";
+  questionAnswered = false;
+
+  nextQuestionBtn.disabled = true;
+}
